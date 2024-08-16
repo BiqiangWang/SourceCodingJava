@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean name="seTeacher" class="org.iscas.entity.teacher.SETeacher"/>
+    <bean class="org.iscas.entity.student.Student">              <!--> prototype原型模式，每次创建不同的对象  <-->
+        <property name="name" value="wbq"/>
+        <property name="teacher" ref="seTeacher"/>
+    </bean>
+    <bean class="org.iscas.service.ServiceA"/>                   <!--> 不能同时有两个实现，会报错！  <-->
+    <!--  <import resource="test.xml"> </import> -->             <!--> 导入其他的配置文件  <-->
+</beans>
