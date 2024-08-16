@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/CSbase/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CSbase/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/LeetCoding/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/LeetCoding/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MyArrayList/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MyArrayList/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SourceCoding/CSbase/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SourceCoding/CSbase/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SourceCoding/LeetCoding/src/main/java" charset="UTF-8" />
@@ -11,5 +17,9 @@
     <file url="file://$PROJECT_DIR$/SourceCoding/SpringTest/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SourceCoding/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SourceCoding/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringTest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringTest/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
 </project>
