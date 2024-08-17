@@ -11,6 +11,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println(String.format("%.1f", 0.25));
         System.out.println(findIntegers(5));
     }
 
