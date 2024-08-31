@@ -31,7 +31,7 @@ public class test1 {
         }
         StringBuilder sb = new StringBuilder();
         sb.append(ca[0]);
-        int flag = 0;  // flag 标识哪种格式  1- 驼峰； 2. 下划线
+        int flag = 0;  // flag 标识哪种格式  1-驼峰； 2-下划线
         for (int i = 0 ; i < n - 1; i++) {
             if (ca[i] == '_' && (ca[i + 1] == '_' || (ca[i + 1] >= 'A' && ca[i + 1] <= 'Z'))) {
                 return "indistinct";
