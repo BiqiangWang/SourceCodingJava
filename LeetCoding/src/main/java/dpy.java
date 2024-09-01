@@ -13,7 +13,7 @@ import java.util.Set;
 
 public class dpy {
     public static void main(String[] args) {
-        jingdong.main();
+        meituan.main();
     }
 
     public class dewu {
@@ -93,6 +93,40 @@ public class dpy {
                 System.out.println(Arrays.toString(row));
             }
 
+        }
+    }
+
+    public class meituan {
+        private static void main() {
+            Scanner sc = new Scanner(System.in);
+            int n = sc.nextInt(), k = sc.nextInt();
+            int[] nums = new int[n];
+            for (int i = 0; i < n; i++) {
+                nums[i] = sc.nextInt();
+            }
+            int l = 1, r = 200001;
+            while (l < r) {
+                int mid = (l + r) / 2;
+                if (check(nums, mid, k)) {
+                    r = mid - 1;
+                } else {
+                    l = mid + 1;
+                }
+            }
+            System.out.println(r);
+        }
+
+        private static boolean check(int[] nums, int len, int k) {
+            boolean[] vis = new boolean[200001];
+            int cnt = 0;
+            for (int num : nums) {
+                for (int l = 1; l < len; l++) {
+                    if (vis[num + l - 1]) continue;
+                    vis[num + l - 1] = true;
+                    cnt++;
+                }
+            }
+            return cnt >= k;
         }
     }
 
