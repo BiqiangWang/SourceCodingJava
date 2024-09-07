@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Random;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
@@ -11,8 +12,25 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(String.format("%.1f", 0.25));
-        System.out.println(findIntegers(5));
+//        System.out.println(String.format("%.1f", 0.25));
+//        System.out.println(findIntegers(5));
+        MyThread thread = new MyThread();
+        for (int i = 0; i < 1; i++) {
+            thread.myName.set("123");
+            thread.run();
+        }
+
+    }
+
+    public static class MyThread implements Runnable {
+        public ThreadLocal<String> myName = new ThreadLocal<>();
+        @Override
+        public void run() {
+            Random random = new Random();
+            System.out.println(myName.get());
+            myName.set(random.nextInt() + "");
+            System.out.println(myName.get());
+        }
     }
 
     public static int findIntegers(int n) {
