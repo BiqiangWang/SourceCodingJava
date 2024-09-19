@@ -1,8 +1,7 @@
 package org.example.math;
 
 import java.lang.reflect.AnnotatedArrayType;
-import java.util.Arrays;
-import java.util.Collections;
+import java.util.*;
 
 /**
  * @author wbq
@@ -30,7 +29,7 @@ public class math {
      * note: 判断是否为素数。遍历即可
      */
     private static boolean isPrime(int n) {
-        if (n <= 2) return false;
+        if (n < 2) return false;
         for (int i = 2; i * i <= n; i++) {
             if (n % i == 0) return false;
         }

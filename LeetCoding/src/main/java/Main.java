@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ThreadPoolExecutor;
 
@@ -9,28 +11,18 @@ import java.util.concurrent.ThreadPoolExecutor;
  * @description
  * @create 2024/7/29 20:23
  */
-
 public class Main {
     public static void main(String[] args) {
-//        System.out.println(String.format("%.1f", 0.25));
-//        System.out.println(findIntegers(5));
-        MyThread thread = new MyThread();
-        for (int i = 0; i < 1; i++) {
-            thread.myName.set("123");
-            thread.run();
-        }
-
+        String test = "HelloWorld";
+        String a = "Hello";
+        final String b = "World";
+        System.out.println(test == "Hello" + "World");
+        System.out.println(test == a + "World");   // 由于 a 不是 final，因此这不是在编译时计算，而是在运行时计算，生成了一个新对象
+        System.out.println(test == "Hello" + b);
     }
 
-    public static class MyThread implements Runnable {
-        public ThreadLocal<String> myName = new ThreadLocal<>();
-        @Override
-        public void run() {
-            Random random = new Random();
-            System.out.println(myName.get());
-            myName.set(random.nextInt() + "");
-            System.out.println(myName.get());
-        }
+    private static void func(List<Integer> arr) {
+        arr.add(4);
     }
 
     public static int findIntegers(int n) {
