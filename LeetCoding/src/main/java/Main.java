@@ -13,12 +13,15 @@ import java.util.concurrent.ThreadPoolExecutor;
  */
 public class Main {
     public static void main(String[] args) {
-        String test = "HelloWorld";
-        String a = "Hello";
-        final String b = "World";
-        System.out.println(test == "Hello" + "World");
-        System.out.println(test == a + "World");   // 由于 a 不是 final，因此这不是在编译时计算，而是在运行时计算，生成了一个新对象
-        System.out.println(test == "Hello" + b);
+//        String test = "HelloWorld";
+//        String a = "Hello";
+//        final String b = "World";
+//        System.out.println(test == "Hello" + "World");
+//        System.out.println(test == a + "World");   // 由于 a 不是 final，因此这不是在编译时计算，而是在运行时计算，生成了一个新对象
+//        System.out.println(test == "Hello" + b);
+        String s = "a b c";
+        s = s.replaceAll(" ", "");
+        System.out.println(s);
     }
 
     private static void func(List<Integer> arr) {
