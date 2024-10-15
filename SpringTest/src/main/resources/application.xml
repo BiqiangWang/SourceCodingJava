@@ -9,5 +9,5 @@
         <property name="teacher" ref="seTeacher"/>
     </bean>
     <bean class="org.iscas.service.ServiceA"/>                   <!--> 不能同时有两个实现，会报错！  <-->
-    <!--  <import resource="exams.baidu.xml"> </import> -->             <!--> 导入其他的配置文件  <-->
+    <!--  <import resource="exams.baidu1.xml"> </import> -->             <!--> 导入其他的配置文件  <-->
 </beans>
